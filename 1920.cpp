@@ -1,5 +1,7 @@
 #include <iostream>
 using namespace std;
+// 백준 알고리즘 1920번 문제
+// 병합 정렬 알고리즘 문제
 
 void MergeCombine(int arr[], int left, int mid, int right)
 {

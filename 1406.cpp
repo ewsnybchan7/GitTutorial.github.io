@@ -1,6 +1,8 @@
 #include <iostream>
 #include <list>
 using namespace std;
+// 백준 1406번 문제
+// 리스트를 활용한 커서 이동 문제
 
 int main()
 {
@@ -26,21 +28,21 @@ int main()
 
 		switch (a)
 		{
-		case 'P':
+		case 'P': // 해당 커서에 문자를 추가한다
 			cin >> a;
 			line.insert(pos, a);
 			break;
-		case 'L':
+		case 'L': // 커서를 좌측으로 옮긴다
 			if (pos == line.begin())
 				break;
 			--pos;
 			break;
-		case 'D':
+		case 'D': // 커서를 우측으로 옮긴다
 			if (pos == line.end())
 				break;
 			++pos;
 			break;
-		case 'B':
+		case 'B': // 해당 커서에 있는 문자를 삭제한다
 			if (pos == line.begin())
 				break;
 			pos = line.erase(--pos);

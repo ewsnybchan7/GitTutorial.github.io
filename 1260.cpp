@@ -2,6 +2,8 @@
 #include <stack>
 #include <queue>
 using namespace std;
+// 백준 1260번 문제
+// DFS 탐색과 BFS 탐색 알고리즘
 
 bool graph[1001][1001];
 bool check[1001];
